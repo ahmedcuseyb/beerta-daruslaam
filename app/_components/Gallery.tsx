@@ -21,7 +21,7 @@ const FilterableGallery = () => {
       : images.filter((photo) => photo.category === activeCategory);
 
   return (
-    <section className="bg-gray-100 py-16">
+    <section className="bg-gray-100 py-16" id="gallery">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-8">

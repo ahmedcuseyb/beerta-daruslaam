@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 
-const links = ['About', 'Galery', 'Contact'];
+const links = ['About', 'Gallery', 'Contact'];
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);

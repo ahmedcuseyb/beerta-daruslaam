@@ -6,6 +6,9 @@ import ActivityCarousel from './_components/ActivityCarousel'
 import Save from './_components/Save'
 import FilterableGallery from './_components/Gallery'
 import Nav from './_components/Nav'
+import ContactUs from './_components/contact'
+import FAQSection from './_components/FAQ'
+import Footer from './_components/Footer'
 
 const page = () => {
   return (
@@ -17,6 +20,9 @@ const page = () => {
      <ActivityCarousel/>
      <Save/>
      <FilterableGallery/>
+     <ContactUs/>
+     <FAQSection/>
+     <Footer/>
     </div>
   )
 }

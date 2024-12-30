@@ -22,7 +22,7 @@ const ActivityCarousel = () => {
   };
 
   return (
-    <section className="bg-gray-900 py-16">
+    <section className="bg-gray-900 py-16" id="about">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-8">
