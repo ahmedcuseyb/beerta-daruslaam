@@ -53,8 +53,8 @@ export default function Nav() {
       <Link href="/">
        
         <Image
-          src='/heider.png'
-          alt='heider Logo'
+          src='/beerta.png'
+          alt='beerta Logo'
           width={130}
           height={40}
           className={`cursor-pointer object-contain h-full`}
@@ -106,8 +106,8 @@ export default function Nav() {
           <>
             <div className='px-4 w-full h-[80px] flex items-center justify-between'>
               <Image
-               src='/heider.png'
-               alt='heider Logo'
+               src='/beerta.png'
+               alt='beerta Logo'
                width={130}
                height={30}
                className={`cursor-pointer object-contain h-full`}
