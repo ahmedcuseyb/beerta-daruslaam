@@ -30,7 +30,7 @@ const ContactUs: React.FC = () => {
             </div>
           </div>
           <div className="md:w-2/3 p-6">
-            <h2 className="text-2xl font-semibold text-[#c68958]">Get in touch</h2>
+            <h2 className="text-2xl font-semibold text-[#01b657]">Get in touch</h2>
             <form className="mt-6 space-y-4">
               <div className="md:flex md:space-x-4 space-y-4 md:space-y-0">
                 <div className='w-full md:w-1/2'>
@@ -52,7 +52,7 @@ const ContactUs: React.FC = () => {
                 <textarea id="message" className="w-full p-2 border border-blue-600 rounded mt-1 bg-transparent text-black " rows={4} placeholder="Message"></textarea>
               </div>
               <div>
-                <button type="submit" className="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#c68958] hover:bg-[#303085] ">
+                <button type="submit" className="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#01b657] hover:bg-[#303085] ">
                   Send Message
                 </button>
               </div>
