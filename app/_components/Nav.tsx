@@ -55,8 +55,8 @@ export default function Nav() {
         <Image
           src='/beerta.png'
           alt='beerta Logo'
-          width={130}
-          height={40}
+          width={70}
+          height={10}
           className={`cursor-pointer object-contain h-full`}
         />
         </Link>
