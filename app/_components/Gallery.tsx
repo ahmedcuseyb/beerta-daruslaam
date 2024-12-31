@@ -6,9 +6,17 @@ const FilterableGallery = () => {
   const images = [
     { src: "images/activities/a1.jpg", alt: "Activity 1", category: "activity" },
     { src: "images/activities/a2.jpg", alt: "Activity 2", category: "activity" },
-    { src: "images/activities/a3.jpg", alt: "Animal 1", category: "animals" },
-    { src: "images/activities/a4.jpg", alt: "Animal 2", category: "animals" },
-    { src: "images/activities/a5.jpg", alt: "Visitor 1", category: "visitors" },
+    { src: "images/activities/a3.jpg", alt: "Animal 1", category: "activity" },
+    { src: "images/activities/a4.jpg", alt: "Animal 2", category: "activity" },
+    { src: "images/activities/a5.jpg", alt: "Visitor 1", category: "activity" },
+    { src: "images/activities/libaax.png", alt: "Animal 2", category: "animals" },
+    { src: "images/activities/animal.png", alt: "Animal 2", category: "animals" },
+    { src: "images/activities/hyena.jpg", alt: "Animal 2", category: "animals" },
+    { src: "images/activities/horse.png", alt: "Animal 2", category: "animals" },
+    { src: "images/activities/camel.png", alt: "Animal 2", category: "animals" },
+    { src: "images/activities/xamze.png", alt: "Animal 2", category: "visitors" },
+    { src: "images/activities/eid.png", alt: "Animal 2", category: "visitors" },
+
     { src: "images/activities/a6.jpg", alt: "Cafeteria 1", category: "cafeteria" },
   ];
 
