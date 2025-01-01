@@ -1,9 +1,10 @@
+// components/Nav.js
 'use client';
 import { useState, useEffect, useRef } from 'react';
 import Link from "next/link";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 
 const links = ['About', 'Gallery', 'Contact'];
@@ -11,6 +12,7 @@ const links = ['About', 'Gallery', 'Contact'];
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const headerRef = useRef<HTMLElement | null>(null);
   const menuRef = useRef<HTMLUListElement | null>(null);
 
@@ -39,7 +41,6 @@ export default function Nav() {
       }
     }
   };
-  // bg-[#2c268a]
 
   return (
     <nav
@@ -49,19 +50,17 @@ export default function Nav() {
       }`}
     >
       <div className="flex items-center h-full">
-       
-      <Link href="/">
-       
-        <Image
-          src='/beerta.png'
-          alt='beerta Logo'
-          width={70}
-          height={10}
-          className={`cursor-pointer object-contain h-full`}
-        />
+        <Link href="/">
+          <Image
+            src='/beerta.png'
+            alt='beerta Logo'
+            width={70}
+            height={10}
+            className={`cursor-pointer object-contain h-full`}
+          />
         </Link>
       </div>
-      {/* <div>OUR SCHOOL</div> */}
+
       <div className='flex-grow'></div>
       <ul className='hidden md:flex items-center gap-6 list-none font-semibold'>
         {links.map(link => (
@@ -70,23 +69,39 @@ export default function Nav() {
               href={link === 'WhitePaper' ? '/WhitePaper.pdf' : `#${link.toLowerCase().replace(' ', '-')}`}
               onClick={handleClick}
               target="_blank"
-              className='text-lg  hover:text-[#c68958] transition-colors duration-200'
+              className='text-lg hover:text-[#c68958] transition-colors duration-200'
             >
               {link}
             </a>
           </li>
         ))}
-        <button className='hidden md:block bg-[#c68958] p-3 px-10 rounded-lg  transition-transform duration-300 hover:scale-105'>
-        <a href="/signup" className="text-[#303085]">Apply Online</a>
+        <li className="relative">
+          <button
+            className="text-lg hover:text-[#c68958] transition-colors duration-200 flex items-center"
+            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+          >
+            Zoo Categories <FontAwesomeIcon icon={faChevronDown} className="ml-2" />
           </button>
-        {/* <button className='hidden md:block bg-[#c68958] p-3 px-10 rounded-lg  transition-transform duration-300 hover:scale-105'>
-        <a href="/signin" className="text-[#4B478A]">Sign In</a>
-         
-          </button> */}
+          {isDropdownOpen && (
+            <ul className="absolute left-0 mt-2 bg-white text-gray-800 rounded-lg shadow-lg py-2">
+              <li>
+                <Link href="/Zoo-Categories/Lions" className="block px-4 py-2 hover:bg-gray-100" target='_blank'>Lions</Link>
+              </li>
+              <li>
+                <Link href="/Zoo-Categories/Snakes" className="block px-4 py-2 hover:bg-gray-100" target='_blank'>Snakes</Link>
+              </li>
+              <li>
+                <Link href="/Zoo-Categories/Hyenas" className="block px-4 py-2 hover:bg-gray-100" target='_blank'>Hyenas</Link>
+              </li>
+            </ul>
+          )}
+        </li>
+        <button className='hidden md:block bg-[#c68958] p-3 px-10 rounded-lg transition-transform duration-300 hover:scale-105'>
+          <a href="/signup" className="text-[#303085]">Apply Online</a>
+        </button>
         <button className='hidden md:block bg-[#c68958] p-3 px-10 rounded-lg text-[#4B478A] transition-transform duration-300 hover:scale-105'>
           Email us
         </button>
-
       </ul>
 
       <div className='md:hidden' onClick={() => setIsOpen(true)}>
@@ -106,11 +121,11 @@ export default function Nav() {
           <>
             <div className='px-4 w-full h-[80px] flex items-center justify-between'>
               <Image
-               src='/beerta.png'
-               alt='beerta Logo'
-               width={130}
-               height={30}
-               className={`cursor-pointer object-contain h-full`}
+                src='/beerta.png'
+                alt='beerta Logo'
+                width={130}
+                height={30}
+                className={`cursor-pointer object-contain h-full`}
               />
               <FontAwesomeIcon
                 icon={faTimes}
@@ -131,16 +146,30 @@ export default function Nav() {
                   </a>
                 </li>
               ))}
+              <li>
+                <button
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                  className='text-lg hover:text-[#c68958] transition-colors duration-200 flex items-center'
+                >
+                  Zoo Categories <FontAwesomeIcon icon={faChevronDown} className="ml-2" />
+                </button>
+                {isDropdownOpen && (
+                  <ul className="bg-[#2c268a] text-white rounded-lg py-2">
+                    <li>
+                      <Link href="/lions" className="block px-4 py-2 hover:bg-gray-100">Lions</Link>
+                    </li>
+                    <li>
+                      <Link href="/snakes" className="block px-4 py-2 hover:bg-gray-100">Snakes</Link>
+                    </li>
+                    <li>
+                      <Link href="/hyenas" className="block px-4 py-2 hover:bg-gray-100">Hyenas</Link>
+                    </li>
+                  </ul>
+                )}
+              </li>
             </ul>
-            <button className='hidden md:block bg-[#c68958] p-3 px-10 rounded-lg  transition-transform duration-300 hover:scale-105'>
-              <a href="/signup" className="text-[#303085]">Apply Online</a>
-            </button>
-        <button className='hidden md:block bg-[#c68958] p-3 px-10 rounded-lg  transition-transform duration-300 hover:scale-105'>
-        <a href="/signin" className="text-[#4B478A]">Sign In</a>
-         
-          </button>
             <button className='bg-[#c68958] text-[#4B478A] p-3 px-10 rounded-lg font-medium mt-4 mx-4 transition-transform duration-300 hover:scale-105'>
-              Email us 
+              Email us
             </button>
           </>
         )}
@@ -148,3 +177,54 @@ export default function Nav() {
     </nav>
   );
 }
+
+// Lions Component
+export const Lions = () => (
+  <section className="p-8">
+    <h2 className="text-4xl font-bold mb-4">Lions</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {[1, 2, 3].map((i) => (
+        <img
+          key={i}
+          src={`/images/lions/lion${i}.jpg`}
+          alt={`Lion ${i}`}
+          className="w-full h-64 object-cover rounded-lg shadow-md"
+        />
+      ))}
+    </div>
+  </section>
+);
+
+// Snakes Component
+export const Snakes = () => (
+  <section className="p-8">
+    <h2 className="text-4xl font-bold mb-4">Snakes</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {[1, 2, 3].map((i) => (
+        <img
+          key={i}
+          src={`/images/snakes/snake${i}.jpg`}
+          alt={`Snake ${i}`}
+          className="w-full h-64 object-cover rounded-lg shadow-md"
+        />
+      ))}
+    </div>
+  </section>
+);
+
+// Hyenas Component
+export const Hyenas = () => (
+  <section className="p-8">
+    <h2 className="text-4xl font-bold mb-4">Hyenas</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {[1, 2, 3].map((i) => (
+        <img
+          key={i}
+          src={`/images/hyenas/hyena${i}.jpg`}
+          alt={`Hyena ${i}`}
+          className="w-full h-64 object-cover rounded-lg shadow-md"
+        />
+      ))}
+    </div>
+  </section>
+);
