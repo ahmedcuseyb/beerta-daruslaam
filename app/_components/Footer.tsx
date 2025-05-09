@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
         {/* Left: Copyright */}
         <div className="text-sm text-center md:text-left">
-          © 2024 Beerta Darusalaam. All Rights Reserved
+          © 2025 Beerta Darusalaam. All Rights Reserved
         </div>
 
         {/* Right: Links */}
