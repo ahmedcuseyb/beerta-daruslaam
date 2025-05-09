@@ -1,12 +1,13 @@
 import { FaWhatsapp, FaFacebookMessenger, FaPhoneAlt } from 'react-icons/fa';
 
 export default function Footer() {
+  let currentYear = new Date().getFullYear();
   return (
     <footer className="bg-black text-gray-300 py-4 relative">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
         {/* Left: Copyright */}
         <div className="text-sm text-center md:text-left">
-          © 2025 Beerta Darusalaam. All Rights Reserved
+          © {currentYear} Beerta Darusalaam. All Rights Reserved
         </div>
 
         {/* Right: Links */}
