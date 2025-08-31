@@ -4,11 +4,13 @@ import { motion } from "framer-motion";
 
 const FilterableGallery = () => {
   const images = [
-    { src: "images/activities/a1.jpg", alt: "Activity 1", category: "activity" },
-    { src: "images/activities/a2.jpg", alt: "Activity 2", category: "activity" },
-    { src: "images/activities/a3.jpg", alt: "Animal 1", category: "activity" },
-    { src: "images/activities/a4.jpg", alt: "Animal ", category: "activity" },
-    { src: "images/activities/a5.jpg", alt: "Visitor 1", category: "activity" },
+
+    
+    { src: "images/activities/ciyaal.png", alt: "Activity 1", category: "activity" },
+    { src: "images/activities/kursi.png", alt: "Activity 2", category: "activity" },
+    { src: "images/activities/meeting.png", alt: "Animal 1", category: "activity" },
+    { src: "images/activities/xamar.png", alt: "building ", category: "activity" },
+    { src: "images/activities/profile.png", alt: "building", category: "activity" },
     { src: "images/activities/aar.jpeg", alt: "Animal 2", category: "animals" },
     { src: "images/activities/dhurwaa.jpeg", alt: "Animal 2", category: "animals" },
     { src: "images/activities/birds.jpeg", alt: "Animal 2", category: "animals" },

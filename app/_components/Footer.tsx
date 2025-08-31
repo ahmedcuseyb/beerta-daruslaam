@@ -16,7 +16,7 @@ export default function Footer() {
           href="tel:+252613174074"
           // className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center shadow-md hover:bg-blue-600 transition"
         >
-          Developed By Bicir
+          Developed By Axmed Cuseyb
         </a>
         </div>
       </div>

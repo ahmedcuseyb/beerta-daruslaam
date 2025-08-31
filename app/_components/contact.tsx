@@ -13,11 +13,11 @@ const ContactUs: React.FC = () => {
             <div className="mt-6 space-y-4">
               <div className="flex items-center">
                 <FontAwesomeIcon icon={faMapMarkerAlt} className="h-5 w-5 mr-3" />
-                <span>198 West 21th Street, Suite 721 New York, NY 10016</span>
+                <span>Jidka Warshadaha, Banaadir</span>
               </div>
               <div className="flex items-center">
                 <FontAwesomeIcon icon={faPhone} className="h-5 w-5 mr-3" />
-                <span>+254740333023</span>
+                <span>+252613174074</span>
               </div>
               <div className="flex items-center">
                 <FontAwesomeIcon icon={faEnvelope} className="h-5 w-5 mr-3" />
@@ -25,7 +25,7 @@ const ContactUs: React.FC = () => {
               </div>
               <div className="flex items-center">
                 <FontAwesomeIcon icon={faGlobe} className="h-5 w-5 mr-3" />
-                <span>bicir.com</span>
+                <span>beerta xamar</span>
               </div>
             </div>
           </div>

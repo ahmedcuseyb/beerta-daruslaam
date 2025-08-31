@@ -20,7 +20,7 @@ const Adventure = () => {
         //   link: "#",
         // },
          {
-          image: "/images/adventure/individual.png", 
+          image: "/images/adventure/shaqsi.png", 
           title: "Individuals",
           points: ["Adventure days", "Holidays", "Celebrations"],
           link: "#",

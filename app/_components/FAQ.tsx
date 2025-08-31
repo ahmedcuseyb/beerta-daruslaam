@@ -4,15 +4,37 @@ import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 export default function FAQSection() {
-  const faqs = [
-    { question: "What is a Umul Qura ?", answer: "UMUL QURA TV is a platform providing Quranic education, tafsir, Arabic courses, and more." },
-    { question: "How do I get started with Diasmog TV?", answer: "You can get started by signing up on the platform and accessing the available courses." },
-    { question: "Is the full tafsir included?", answer: "Yes, Umul Qura  offers full tafsir sessions for in-depth Quranic understanding." },
-    { question: "Is there a full Arabic curriculum?", answer: "Yes, Umul qura  includes a full Arabic curriculum to help you understand Arabic." },
-    { question: "How is Umul different from other Quran study platforms?", answer: "Umul  focuses on structured learning, combining tafsir, Arabic, and practical Islamic education." },
-    { question: "How do I access the personalized dashboard and course materials?", answer: "Log in to your Umul QUra account to access your personalized dashboard and materials." },
-    { question: "How do I contact Umul Qura  for support?", answer: "You can contact Umul qura support via the help section or email support@bayyinah.tv." },
-  ];
+  // const faqs = [
+  //   { question: "What is a Umul Qura ?", answer: "UMUL QURA TV is a platform providing Quranic education, tafsir, Arabic courses, and more." },
+  //   { question: "How do I get started with Beerta Xamar", answer: "You can get started by signing up on the platform and accessing the available courses." },
+  //   { question: "Is the full tafsir included?", answer: "Yes, Umul quran  offers full tafsir sessions for in-depth Quranic understanding." },
+  //   { question: "Is there a full Arabic curriculum?", answer: "Yes, Umul qura  includes a full Arabic curriculum to help you understand Arabic." },
+  //   { question: "How is Umul different from other Quran study platforms?", answer: "Umul  focuses on structured learning, combining tafsir, Arabic, and practical Islamic education." },
+  //   { question: "How do I access the personalized dashboard and course materials?", answer: "Log in to your Umul QUra account to access your personalized dashboard and materials." },
+  //   { question: "How do I contact Umul Qura  for support?", answer: "You can contact Umul qura support via the help section or email support@bayyinah.tv." },
+  // ];
+      const faqs = [
+  { 
+    question: "What are the opening hours of Beerta Xamar?", 
+    answer: "Beerta Xamar is open every day from Monday to Sunday, between 7:00 AM and 10:00 PM." 
+  },
+  { 
+    question: "How do I get to Beerta Xamar?", 
+    answer: "Beerta Xamar is located along Jidka Warshadaha, making it easily accessible from different parts of Mogadishu." 
+  },
+  { 
+    question: "When was Beerta Xamar established?", 
+    answer: "Beerta Xamar was established in 2003 and has since become one of Mogadishu’s most popular family destinations." 
+  },
+  { 
+    question: "Does Beerta Xamar have a swimming pool and animal riding?", 
+    answer: "Yes, the park offers a swimming pool for visitors as well as camel riding experiences." 
+  },
+  { 
+    question: "Are there halls available for weddings, graduations, or meetings?", 
+    answer: "Yes, Beerta Xamar has large event halls suitable for weddings, graduation ceremonies, and meetings." 
+  },
+];
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 

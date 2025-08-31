@@ -8,7 +8,12 @@ import FilterableGallery from './_components/Gallery'
 import Nav from './_components/Nav'
 import ContactUs from './_components/contact'
 import FAQSection from './_components/FAQ'
+// import GoogleMapEmbedProps from './_components/GoogleMapEmbed'
+// import GoogleMapEmbed from "@/components/GoogleMapEmbed";
+
+
 import Footer from './_components/Footer'
+import GoogleMapEmbed from './_components/GoogleMapEmbed'
 
 const page = () => {
   return (
@@ -21,6 +26,10 @@ const page = () => {
      <Save/>
      <FilterableGallery/>
      <ContactUs/>
+    <section>
+      <h2>Find Us</h2>
+      <GoogleMapEmbed query="Beerta Xamar, Mogadishu, Somalia" zoom={16} />
+    </section>
      <FAQSection/>
      <Footer/>
     </div>

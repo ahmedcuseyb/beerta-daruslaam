@@ -2,15 +2,22 @@
 import { useState } from "react";
 
 const ActivityCarousel = () => {
+  // const images = [
+  //   "images/activities/a1.jpg",
+  //   "images/activities/a2.jpg",
+  //   "images/activities/a3.jpg",
+  //   "images/activities/a4.jpg",
+  //   "images/activities/a5.jpg",
+  //   "images/activities/a6.jpg",
+  // ];
   const images = [
-    "images/activities/a1.jpg",
-    "images/activities/a2.jpg",
-    "images/activities/a3.jpg",
-    "images/activities/a4.jpg",
+    "images/activities/ciyaal.png",
+    "images/activities/kursi.png",
+    "images/activities/meeting.png",
+    "images/activities/xamar.png",
     "images/activities/a5.jpg",
     "images/activities/a6.jpg",
   ];
-
   const [currentSet, setCurrentSet] = useState(0);
 
   const handleNext = () => {
