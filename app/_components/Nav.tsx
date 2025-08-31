@@ -128,7 +128,7 @@ export default function Nav() {
           <>
             <div className='px-4 w-full h-[80px] flex items-center justify-between'>
               <Image
-                src='/beerta.png'
+                src='/xamarlogo.png'
                 alt='beerta Logo'
                 width={130}
                 height={30}
