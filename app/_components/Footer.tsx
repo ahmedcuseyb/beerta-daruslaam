@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
         {/* Left: Copyright */}
         <div className="text-sm text-center md:text-left">
-          © {currentYear} Beerta Darusalaam. All Rights Reserved
+          © {currentYear} Beerta Xamar. All Rights Reserved
         </div>
 
         {/* Right: Links */}
@@ -35,7 +35,8 @@ export default function Footer() {
 
         {/* Messenger Icon */}
         <a
-          href="https://www.facebook.com/beerta.daarusalaam"
+        
+          href="https://www.facebook.com/profile.php?id=61560178297529"
           target="_blank"
           className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center shadow-md hover:bg-blue-700 transition"
         >

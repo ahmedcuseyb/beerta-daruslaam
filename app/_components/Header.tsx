@@ -2,11 +2,16 @@
 import { useEffect, useState } from "react";
 
 const HeaderWithVideo = () => {
+  // const videos = [
+  //   "/videos/video1.mp4",
+  //   "/videos/video2.mp4",
+  //   "/videos/video3.mp4",
+  // ];
   const videos = [
-    "/videos/video1.mp4",
-    "/videos/video2.mp4",
-    "/videos/video3.mp4",
-  ]; // List of video sources
+    "videos/xamar/video1.mp4",
+    "video2.xamar/mp4",
+    "videos/xamar/video3.mp4",
+  ];
 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
@@ -36,7 +41,7 @@ const HeaderWithVideo = () => {
 
       {/* Header Content */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
-        <h1 className="text-4xl font-bold md:text-6xl">Welcome to Our Site</h1>
+        <h1 className="text-4xl font-bold md:text-6xl">Welcome to Beerta xamar</h1>
         <p className="mt-4 text-lg md:text-2xl">
           Experience seamless transitions and dynamic visuals.
         </p>

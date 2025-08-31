@@ -6,7 +6,7 @@ const About = () => {
           {/* Left Image Section */}
           <div className="lg:w-1/2 relative">
             <img
-              src="/images/beer1.jpg"
+              src="/images/xamar/beer1.jpg"
               alt="Adventure Activity"
               className="rounded-lg shadow-lg object-cover h-full w-full"
             />

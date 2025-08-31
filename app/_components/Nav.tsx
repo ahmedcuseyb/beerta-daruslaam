@@ -51,8 +51,15 @@ export default function Nav() {
     >
       <div className="flex items-center h-full">
         <Link href="/">
-          <Image
+          {/* <Image
             src='/beerta.png'
+            alt='beerta Logo'
+            width={70}
+            height={10}
+            className={`cursor-pointer object-contain h-full`}
+          /> */}
+          <Image
+            src='/xamarlogo.png'
             alt='beerta Logo'
             width={70}
             height={10}

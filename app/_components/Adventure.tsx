@@ -1,20 +1,38 @@
 // components/AdventureGrid.js
 const Adventure = () => {
     const adventures = [
-        {
-          image: "/images/individual.jpg", // Replace with your image path
+        // {
+        //   image: "/images/individual.jpg", // Replace with your image path
+        //   title: "Individuals",
+        //   points: ["Adventure days", "Holidays", "Celebrations"],
+        //   link: "#",
+        // },
+        // {
+        //   image: "/images/family.jpg", // Replace with your image path
+        //   title: "Families",
+        //   points: ["Holidays", "Celebrations", "Parties"],
+        //   link: "#",
+        // },
+        // {
+        //   image: "/images/hamza.jpg", // Replace with your image path
+        //   title: "Corporate",
+        //   points: ["Team Building", "Management Training", "Fun Days"],
+        //   link: "#",
+        // },
+         {
+          image: "/images/adventure/individual.png", 
           title: "Individuals",
           points: ["Adventure days", "Holidays", "Celebrations"],
           link: "#",
         },
         {
-          image: "/images/family.jpg", // Replace with your image path
+          image: "/images/adventure/family.png", 
           title: "Families",
           points: ["Holidays", "Celebrations", "Parties"],
           link: "#",
         },
         {
-          image: "/images/hamza.jpg", // Replace with your image path
+          image: "/images/adventure/kali.png", 
           title: "Corporate",
           points: ["Team Building", "Management Training", "Fun Days"],
           link: "#",
